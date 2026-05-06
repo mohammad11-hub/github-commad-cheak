@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript practice</title>
+  </head>
+  <body>
+    <h1>javascript practice</h1>
+    <!-- inline javascript -->
+    <button onclick="alert('thanks for the click button❤️')">click me !</button>
+    <!-- internal javascript -->
+    <button class="secondbutton">click me</button>
+    <!-- external javascript -->
+    <button class="thirdbutton">click me</button>
+    <script src="script.js">
+      const secondButton = document.querySelector(".secondbutton");
+      secondButton.addEventListener("click", () => {
+        alert("thanks for the click second button❤️");
+      });
+    </script>
+  </body>
+</html>
