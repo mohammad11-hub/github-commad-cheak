@@ -6,5 +6,10 @@
 console.log("hello world");
 // it is the variable and values
 
-var Myname = "satyarth";
-console.log(Myname);
+var My_name = "10";
+
+// var _name$ = "satyarth";
+// var 123name = "satyarth";
+// var $name = "satyarth";
+// var my@email = "satyarth";
+console.log( typeof +My_name);
