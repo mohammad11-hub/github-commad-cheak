@@ -45,10 +45,21 @@ console.log( typeof +My_name);
 
 // votting task 
 
-var age = 18;
+let userAge = 18;
+let isCitizen = true;
 
-if (age >= 18) {
-  console.log("you are eligible to vote");
-}else if(age <= 18){
-    console.log("you are not eligible to vote");
+let isRegistered = true;
+
+if (userAge >= 18) {
+  if (isCitizen) {
+    if (isRegistered) {
+      console.log("You are eligible to vote.");
+    } else {
+      console.log("You are not eligible to vote due to registration status.");
+    }
+  } else {
+    console.log("You are not eligible to vote due to citizenship status.");
+  }
+} else {
+  console.log("You are not old enough to vote.");
 }
