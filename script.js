@@ -14,7 +14,7 @@ var My_name = "10";
 // var 123name = "satyarth";
 // var $name = "satyarth";
 // var my@email = "satyarth";
-console.log( typeof +My_name);
+console.log(typeof +My_name);
 
 // expession and statement
 // assigmrnt operator
@@ -43,23 +43,34 @@ console.log( typeof +My_name);
 //     console.log("nake gerjato roy");
 // }
 
-// votting task 
+// votting task
 
-let userAge = 18;
-let isCitizen = true;
+// let userAge = 18;
+// let isCitizen = true;
 
-let isRegistered = true;
+// let isRegistered = true;
 
-if (userAge >= 18) {
-  if (isCitizen) {
-    if (isRegistered) {
-      console.log("You are eligible to vote.");
-    } else {
-      console.log("You are not eligible to vote due to registration status.");
-    }
-  } else {
-    console.log("You are not eligible to vote due to citizenship status.");
-  }
+// if (userAge >= 18) {
+//   if (isCitizen) {
+//     if (isRegistered) {
+//       console.log("You are eligible to vote.");
+//     } else {
+//       console.log("You are not eligible to vote due to registration status.");
+//     }
+//   } else {
+//     console.log("You are not eligible to vote due to citizenship status.");
+//   }
+// } else {
+//   console.log("You are not old enough to vote.");
+// }
+// ==========
+// interview question
+// ==========
+let number = 2;
+
+if (number % 2 === 0) {
+  console.log("even number");
 } else {
-  console.log("You are not old enough to vote.");
+  console.log("odd number");
 }
+
