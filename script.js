@@ -31,7 +31,9 @@ console.log(typeof +My_name);
 // var result = 0.1 + 0.2;
 // console.log(result);
 
+// ==========
 // trip question
+// =========
 
 // var temp = 1;
 // if(temp >= 30){
@@ -43,7 +45,10 @@ console.log(typeof +My_name);
 //     console.log("nake gerjato roy");
 // }
 
+
+// ==========
 // votting task
+// =========
 
 // let userAge = 18;
 // let isCitizen = true;
@@ -63,14 +68,93 @@ console.log(typeof +My_name);
 // } else {
 //   console.log("You are not old enough to vote.");
 // }
+
+
 // ==========
 // interview question
 // ==========
-let number = 2;
 
-if (number % 2 === 0) {
-  console.log("even number");
-} else {
-  console.log("odd number");
+
+// let number = 2;
+
+// if (number % 2 === 0) {
+//   console.log("even number");
+// } else {
+//   console.log("odd number");
+// }
+
+
+// =========
+// switch case
+// ==========
+
+
+// var day = "wednesday";
+// switch (day) {
+//   case "monday":
+//     console.log("today is monday"); 
+//     break;
+//   case "tuesday":
+//     console.log("today is tuesday");
+//     break;
+//   case "wednesday":
+//     console.log("today is wednesday");
+//     break;
+//   case "thursday":
+//     console.log("today is thursday");
+//     break;
+//   case "friday":
+//     console.log("today is friday");
+//     break;
+//   case "saturday":
+//     console.log("today is saturday");
+//     break;
+//   case "sunday":
+//     console.log("today is sunday");
+//     break;
+//   default:
+//     console.log("invalid day");
+// }
+
+
+// ================
+// finsh the area of circle, square and rectangle using switch case
+// ================
+
+
+// var areofcircle = "square";
+// var a=5;
+// var b=10;
+
+// switch (areofcircle) {
+// case "square":
+//   console.log("area of square is " + (a * a));
+//   break;
+// case "rectangle":
+//   console.log("area of rectangle is " + (a * b));
+//   break;
+// case "circle":
+//   console.log("area of circle is " + (3.14 * a * a));
+//   break;
+// default:
+//   console.log("invalid shape");
+// }
+
+// ================
+//  for loop 
+// ================
+var enteredNumber = 4;
+
+for (var i = 1; i <= 10; i++) {
+  var result = enteredNumber * i;
+  console.log(enteredNumber + " x " + i + " = " + result);
 }
-
+// ================
+// while loop
+// ================
+var i = 1;
+while (i <= 10) {
+  var result = enteredNumber * i;
+  console.log(enteredNumber + " x " + i + " = " + result);
+  i++;
+}
