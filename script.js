@@ -143,18 +143,73 @@ console.log(typeof +My_name);
 // ================
 //  for loop 
 // ================
-var enteredNumber = 4;
+// var enteredNumber = 4;
 
-for (var i = 1; i <= 10; i++) {
-  var result = enteredNumber * i;
-  console.log(enteredNumber + " x " + i + " = " + result);
-}
+// for (var i = 1; i <= 10; i++) {
+//   var result = enteredNumber * i;
+//   console.log(enteredNumber + " x " + i + " = " + result);
+// }
 // ================
 // while loop
 // ================
-var i = 1;
-while (i <= 10) {
-  var result = enteredNumber * i;
-  console.log(enteredNumber + " x " + i + " = " + result);
-  i++;
+// var i = 1;
+// while (i <= 10) {
+//   var result = enteredNumber * i;
+//   console.log(enteredNumber + " x " + i + " = " + result);
+//   i++;
+// }
+
+//===============
+// do while loop
+// ===============
+
+// var userInput;
+// var postiveNumber;
+
+// do {
+//   userInput = prompt("Please enter a positive number:");
+//   postiveNumber = parseFloat(userInput);
+// } while (isNaN(postiveNumber) || postiveNumber <= 0);
+
+// console.log("You entered a valid positive number: " + postiveNumber); 
+
+// ================
+// prime number with for loop
+// ================
+
+// var num = prompt("enter a number");
+// var isprime = true;
+
+// for (var i = 2; i < num; i++) {
+//   if (num % i === 0) {
+//     isprime = false;
+//     break;
+//   }
+// }
+
+// if (isprime) {
+//   console.log(num + " is  a prime number.");
+// } else {
+//   console.log(num + " is not a prime number.");
+// }
+
+// ================
+//prime nubr find 1 to 100
+// ================
+
+var limit = 1000;
+
+console.log("Prime numbers between 1 and " + limit + ":");
+
+for (var num = 2; num <= limit; num++) {
+  var isprime = true;
+  for (var i = 2; i < num; i++) {
+    if (num % i === 0) {
+      isprime = false;
+      break;
+    }
+  }
+  if (isprime) {
+    console.log(num);
+  }
 }
