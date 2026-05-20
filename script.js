@@ -197,19 +197,60 @@ console.log(typeof +My_name);
 //prime nubr find 1 to 100
 // ================
 
-var limit = 1000;
+// var limit = 1000;
 
-console.log("Prime numbers between 1 and " + limit + ":");
+// console.log("Prime numbers between 1 and " + limit + ":");
 
-for (var num = 2; num <= limit; num++) {
-  var isprime = true;
-  for (var i = 2; i < num; i++) {
-    if (num % i === 0) {
-      isprime = false;
-      break;
-    }
-  }
-  if (isprime) {
-    console.log(num);
-  }
+// for (var num = 2; num <= limit; num++) {
+//   var isprime = true;
+//   for (var i = 2; i < num; i++) {
+//     if (num % i === 0) {
+//       isprime = false;
+//       break;
+//     }
+//   }
+//   if (isprime) {
+//     console.log(num);
+//   }
+// }
+
+
+// ================
+// leP YEAR FIND
+// ================
+
+// var year = 2028;
+
+// if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+//   console.log(year + " is a leap year.");
+// }else {
+//   console.log(year + " is not a leap year.");
+// }
+
+// // ================
+// // draw the pattern
+// // ================
+
+// for (var i = 1; i <= 5; i++) {
+//   var pattern = "";
+//   for (var j = 5; j >= i; j--) {
+//     pattern += "* ";
+//   }
+//   console.log(pattern);
+// }
+
+// ================
+// funaction
+// ================
+
+function sun(a, b) {
+  return a + b;
 }
+console.log(sun(5, 10));
+console.log(sun(20, 30));
+console.log(sun(15, 25));
+
+function greet(name) {
+  return "Hello, " + name + "!";
+}
+console.log(greet("mohammad husain"));
