@@ -143,7 +143,7 @@ console.log(typeof +My_name);
 // ================
 //  for loop 
 // ================
-// var enteredNumber = 4;
+// var enteredNumber = 59;
 
 // for (var i = 1; i <= 10; i++) {
 //   var result = enteredNumber * i;
@@ -254,3 +254,34 @@ function greet(name) {
   return "Hello, " + name + "!";
 }
 console.log(greet("mohammad husain"));
+
+
+// ================
+// perameter and argument
+// ================
+
+function studName(name ,age , marks ) {
+  return "student name is " + name + " and age is " + age + " and marks is " + marks;
+}
+console.log(studName("satyarth", 20, 85));
+
+// ================
+//calculate the area of circle using function
+// ================
+
+function areaOfCircle(radius) {
+  return 3.14 * radius * radius;
+}
+console.log(areaOfCircle(5));
+
+// ================
+// factorial 
+// ================
+
+var fact = 6;
+var factorial = 1;
+for (var i = 1; i <= fact; i++) {
+  factorial *= i;
+}
+console.log(factorial);
+
