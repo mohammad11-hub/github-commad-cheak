@@ -276,7 +276,7 @@ console.log(areaOfCircle(5));
 
 // ================
 // factorial 
-// ================
+// ================ 
 
 var fact = 6;
 var factorial = 1;
