@@ -269,19 +269,25 @@ console.log(studName("satyarth", 20, 85));
 //calculate the area of circle using function
 // ================
 
-function areaOfCircle(radius) {
-  return 3.14 * radius * radius;
-}
-console.log(areaOfCircle(5));
+// function areaOfCircle(radius) {
+//   return 3.14 * radius * radius;
+// }
+// console.log(areaOfCircle(5));
 
 // ================
 // factorial 
 // ================ 
 
-var fact = 6;
-var factorial = 1;
-for (var i = 1; i <= fact; i++) {
-  factorial *= i;
-}
-console.log(factorial);
+// var fact = 6;
+// var factorial = 1;
+// for (var i = 1; i <= fact; i++) {
+//   factorial *= i;
+// }
+// console.log(factorial);
 
+//` ================
+// fact arrow function
+// ================
+
+const sum = (a, b) => console.log(`the sum is    ${a + b}`);
+sum(5, 10);
