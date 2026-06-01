@@ -291,3 +291,27 @@ console.log(studName("satyarth", 20, 85));
 
 const sum = (a, b) => console.log(`the sum is    ${a + b}`);
 sum(5, 10);
+
+// ================
+// funtion expression
+// ============
+
+function calculator (num1, num2, operator) {
+  switch (operator) {
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "*":
+      return num1 * num2;   
+    case "/":
+      return num1 / num2; 
+    default:
+      return "invalid operator";
+  }
+}
+
+console.log(calculator(10, 5, "+"));
+console.log(calculator(10, 5, "-"));
+console.log(calculator(10, 5, "*"));
+console.log(calculator(10, 5, "/"));

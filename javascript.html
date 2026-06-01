@@ -1,18 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>javascript practice</title>
-  </head>
-  <body>
-    <h1>javascript practice</h1>
-    <!-- inline javascript -->
-    <button onclick="alert('thanks for the click button❤️')">inline!</button>
-    <!-- internal javascript -->
-    <button class="secondbutton">internal</button>
-    <!-- external javascript -->
-    <button class="thirdbutton">external</button>
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+</head>
+<body>
+  <button id="btn1">20</button>
+  <button id="btn2">22</button>
+  <br>
+  <br>
+  <button id="btn3">+</button>
+  <button id="btn4">-</button>
+  <button id="btn5">/</button>  
+  <button id="btn6">*</button>
+<br>
+  <br>
+  <textarea id="result" cols="30" rows="10"></textarea>
+
+  <script>
+    const btn1 = document.getElementById('btn1');
+    const btn2 = document.getElementById('btn2');
+    const btn3 = document.getElementById('btn3');
+    const btn4 = document.getElementById('btn4');
+    const btn5 = document.getElementById('btn5');
+    const btn6 = document.getElementById('btn6');
+    const result = document.getElementById('result');
+
+    let num1, num2, operator;
+
+    btn1.addEventListener('click', () => {
+      num1 = parseFloat(btn1.textContent);
+      result.value += num1;
+    });
+
+    btn2.addEventListener('click', () => {
+      num2 = parseFloat(btn2.textContent);
+      result.value += num2;
+    });
+
+    btn3.addEventListener('click', () => {
+      operator = '+';
+      result.value += operator;
+    });
+
+    btn4.addEventListener('click', () => {
+      operator = '-';
+      result.value += operator;
+    });
+
+    btn5.addEventListener('click', () => {
+      operator = '/';
+      result.value += operator;
+    });
+
+    btn6.addEventListener('click', () => {
+      operator = '*';
+      result.value += operator;
+    });
+  </script>
+</body>
 </html>
