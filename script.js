@@ -243,27 +243,27 @@ console.log(typeof +My_name);
 // funaction
 // ================
 
-function sun(a, b) {
-  return a + b;
-}
-console.log(sun(5, 10));
-console.log(sun(20, 30));
-console.log(sun(15, 25));
+// function sun(a, b) {
+//   return a + b;
+// }
+// console.log(sun(5, 10));
+// console.log(sun(20, 30));
+// console.log(sun(15, 25));
 
-function greet(name) {
-  return "Hello, " + name + "!";
-}
-console.log(greet("mohammad husain"));
+// function greet(name) {
+//   return "Hello, " + name + "!";
+// }
+// console.log(greet("mohammad husain"));
 
 
 // ================
 // perameter and argument
 // ================
 
-function studName(name ,age , marks ) {
-  return "student name is " + name + " and age is " + age + " and marks is " + marks;
-}
-console.log(studName("satyarth", 20, 85));
+// function studName(name ,age , marks ) {
+//   return "student name is " + name + " and age is " + age + " and marks is " + marks;
+// }
+// console.log(studName("satyarth", 20, 85));
 
 // ================
 //calculate the area of circle using function
@@ -289,29 +289,57 @@ console.log(studName("satyarth", 20, 85));
 // fact arrow function
 // ================
 
-const sum = (a, b) => console.log(`the sum is    ${a + b}`);
-sum(5, 10);
+// const sum = (a, b) => console.log(`the sum is    ${a + b}`);
+// sum(5, 10);
 
 // ================
 // funtion expression
 // ============
 
-function calculator (num1, num2, operator) {
-  switch (operator) {
-    case "+":
-      return num1 + num2;
-    case "-":
-      return num1 - num2;
-    case "*":
-      return num1 * num2;   
-    case "/":
-      return num1 / num2; 
-    default:
-      return "invalid operator";
-  }
-}
+// function calculator (num1, num2, operator) {
+//   switch (operator) {
+//     case "+":
+//       return num1 + num2;
+//     case "-":
+//       return num1 - num2;
+//     case "*":
+//       return num1 * num2;   
+//     case "/":
+//       return num1 / num2; 
+//     default:
+//       return "invalid operator";
+//   }
+// }
 
-console.log(calculator(10, 5, "+"));
-console.log(calculator(10, 5, "-"));
-console.log(calculator(10, 5, "*"));
-console.log(calculator(10, 5, "/"));
+// console.log(calculator(10, 5, "+"));
+// console.log(calculator(10, 5, "-"));
+// console.log(calculator(10, 5, "*"));
+// console.log(calculator(10, 5, "/"));
+
+
+// ================
+// resverse a string
+// ================
+
+// const reverseString = (str) => {
+//   let reversed = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversed += str[i];
+//     // console.log(reversed);
+//   } 
+//   return reversed;
+// }
+// console.log(reverseString("niasuh dammahom"));
+
+// ================
+// palindrome number 
+// ================
+
+const isPalindrome = (num) => {
+  const strNum = num.toString();
+  const reversedStrNum = strNum.split("").reverse().join("");
+  let isPalin = strNum === reversedStrNum;
+  console.log(`${strNum} it is a palindrome: ${isPalin}` );
+}
+isPalindrome(121); // true
+isPalindrome(123); // false
