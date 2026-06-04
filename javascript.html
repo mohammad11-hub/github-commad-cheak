@@ -17,6 +17,18 @@
 <br>
   <br>
   <textarea id="result" cols="30" rows="10"></textarea>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- =============== -->
+   <!-- palindrome -->
+    textbox: <input type="text" id="palindromeInput" placeholder="Enter a word or number">
+    <button id="checkPalindrome">Check Palindrome</button>
+    <p id="palindromeResult"></p>
+
 
   <script>
     const btn1 = document.getElementById('btn1');
@@ -26,6 +38,16 @@
     const btn5 = document.getElementById('btn5');
     const btn6 = document.getElementById('btn6');
     const result = document.getElementById('result');
+    const palindromeInput = document.getElementById('palindromeInput');
+    const checkPalindrome = document.getElementById('checkPalindrome');
+
+    checkPalindrome.addEventListener('click', () => {
+      const input = palindromeInput.value;
+      const reversedInput = input.split('').reverse().join('');
+      const isPalindrome = input === reversedInput;
+      const palindromeResult = document.getElementById('palindromeResult');
+      palindromeResult.textContent = isPalindrome ? `${input} is a palindrome.` : `${input} is not a palindrome.`;
+    });
 
     let num1, num2, operator;
 
@@ -58,6 +80,7 @@
       operator = '*';
       result.value += operator;
     });
+    
   </script>
 </body>
 </html>

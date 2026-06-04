@@ -335,11 +335,27 @@ console.log(typeof +My_name);
 // palindrome number 
 // ================
 
-const isPalindrome = (num) => {
-  const strNum = num.toString();
-  const reversedStrNum = strNum.split("").reverse().join("");
-  let isPalin = strNum === reversedStrNum;
-  console.log(`${strNum} it is a palindrome: ${isPalin}` );
-}
-isPalindrome(121); // true
-isPalindrome(123); // false
+// const isPalindrome = (num) => {
+//   const strNum = num.toString();
+//   const reversedStrNum = strNum.split("").reverse().join("");
+//   console.log(reversedStrNum);
+//   let isPalin = strNum === reversedStrNum;
+//   console.log(`${strNum} it is a palindrome: ${isPalin}` );
+// }
+// isPalindrome("mom"); // true
+// isPalindrome("dad"); // false
+
+
+
+// ================
+// array
+// ================
+
+const myArray = [1, 2, 3, 4, 5, 6];
+const furits = ["apple", "banana", "orange", "grape", "kiwi"];
+// i have only 3 and 5 element show in the out put 
+
+const combinedArray = myArray.concat(furits);
+
+const filteredArray = combinedArray.filter(item => item === "kiwi" || item === 5);
+console.log(filteredArray); // Output: [3, 5]
