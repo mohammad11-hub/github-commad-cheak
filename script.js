@@ -359,3 +359,17 @@ const combinedArray = myArray.concat(furits);
 
 const filteredArray = combinedArray.filter(item => item === "kiwi" || item === 5);
 console.log(filteredArray); // Output: [3, 5]
+
+// ===============
+// for of loop
+// ===============
+
+let  HerosName = ["ironman", "spiderman", "thor", "hulk", "captain america"];
+
+for (let hero of HerosName) {
+  console.log(hero);
+}
+
+for (let i in HerosName) {
+  console.log(i);
+}
