@@ -373,3 +373,24 @@ for (let hero of HerosName) {
 for (let i in HerosName) {
   console.log(i);
 }
+
+// ===============
+// map method
+// ===============
+
+// foreach method loop wise output ape che 
+const fuirts= ["apple", "banana", "orange", "grape", "kiwi"];
+furits.forEach((currElement, index, array) => {
+  console.log(`The fruit at index ${index} is ${currElement}`);
+  // console.log(array);
+});
+
+// map method array wise output ape che
+const uppercaseFruits = fuirts.map(fruit => fruit.toUpperCase());
+console.log(uppercaseFruits); // Output: ["APPLE", "BANANA", "ORANGE", "GRAPE", "KIWI"]
+
+// CURD OPERATION
+// POP = last element remove kare che
+// PUSH = last element add kare che
+//? SHIFT = first element remove kare che
+// UNSHIFT = first element add kare che
