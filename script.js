@@ -351,46 +351,83 @@ console.log(typeof +My_name);
 // array
 // ================
 
-const myArray = [1, 2, 3, 4, 5, 6];
-const furits = ["apple", "banana", "orange", "grape", "kiwi"];
-// i have only 3 and 5 element show in the out put 
+// const myArray = [1, 2, 3, 4, 5, 6];
+// const furits = ["apple", "banana", "orange", "grape", "kiwi"];
+// // i have only 3 and 5 element show in the out put 
 
-const combinedArray = myArray.concat(furits);
+// const combinedArray = myArray.concat(furits);
 
-const filteredArray = combinedArray.filter(item => item === "kiwi" || item === 5);
-console.log(filteredArray); // Output: [3, 5]
+// const filteredArray = combinedArray.filter(item => item === "kiwi" || item === 5);
+// console.log(filteredArray); // Output: [3, 5]
 
-// ===============
-// for of loop
-// ===============
+// // ===============
+// // for of loop
+// // ===============
 
-let  HerosName = ["ironman", "spiderman", "thor", "hulk", "captain america"];
+// let  HerosName = ["ironman", "spiderman", "thor", "hulk", "captain america"];
 
-for (let hero of HerosName) {
-  console.log(hero);
-}
+// for (let hero of HerosName) {
+//   console.log(hero);
+// }
 
-for (let i in HerosName) {
-  console.log(i);
-}
+// for (let i in HerosName) {
+//   console.log(i);
+// }
 
-// ===============
-// map method
-// ===============
+// // ===============
+// // map method
+// // ===============
 
-// foreach method loop wise output ape che 
-const fuirts= ["apple", "banana", "orange", "grape", "kiwi"];
-furits.forEach((currElement, index, array) => {
-  console.log(`The fruit at index ${index} is ${currElement}`);
-  // console.log(array);
-});
+// // foreach method loop wise output ape che 
+// const fuirts= ["apple", "banana", "orange", "grape", "kiwi"];
+// furits.forEach((currElement, index, array) => {
+//   console.log(`The fruit at index ${index} is ${currElement}`);
+//   // console.log(array);
+// });
 
-// map method array wise output ape che
-const uppercaseFruits = fuirts.map(fruit => fruit.toUpperCase());
-console.log(uppercaseFruits); // Output: ["APPLE", "BANANA", "ORANGE", "GRAPE", "KIWI"]
+// // map method array wise output ape che
+// const uppercaseFruits = fuirts.map(fruit => fruit.toUpperCase());
+// console.log(uppercaseFruits); // Output: ["APPLE", "BANANA", "ORANGE", "GRAPE", "KIWI"]
 
 // CURD OPERATION
 // POP = last element remove kare che
 // PUSH = last element add kare che
 //? SHIFT = first element remove kare che
 // UNSHIFT = first element add kare che
+
+
+const products = [
+  { name: "laptop", price: 1500 },
+  { name: "mobile", price: 120 },
+  { name: "tablet", price: 900 },
+  { name: "monitor", price: 130 }
+];
+// filtering product by price
+as
+function filterProductsByPrice(products ) {
+  return products.filter(product => product.price <= 500);
+
+}
+
+console.log(filterProductsByPrice(products));
+
+const furit = ["apple", "banana", "orange", "grape", "kiwi"];
+
+const  result = furit.map((currEle) => currEle.toUpperCase());
+console.log(result);
+
+// ================
+// string method
+// ================
+
+const sentence = "The quick brown fox jumps over the lazy dog";
+// methods 1
+console.log(sentence.length); // Output: 36
+// methods 2 search string
+console.log(sentence.includes("fox"));
+// methods 3 find string
+console.log(sentence.indexOf("fox"));
+// methods 4 replace string
+console.log(sentence.replace("fox", "cat"));
+// methods 5 split string
+console.log(sentence.split(" "));
